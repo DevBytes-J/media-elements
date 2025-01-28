@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 2b(media)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav aria-labelledby="primary-navigation">
+        <ol>
+          <li class="one">
+            <a href="#audio"> Audio  </a>
+          </li>
+          <li>
+            <a href="#video">  Video </a>
+          </li>
+          <li>
+            <a href="#iframe"> iframe  </a>
+          </li>
+          <li>
+            <a href="#embed">  Embed  </a>
+          </li>
+          <li>
+            <a href="#source">  Source  </a>
+          </li>
+          <li>
+            <a href="#track"> Track  </a>
+          </li>
+          <li>
+            <a href="#picture">  Picture element  </a>
+          </li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <article id="audio" class="aud">
+        <section>
+          <h1><em>1. Audio element</em></h1>
+          <audio controls
+              src="assets/music/Céline Dion The Power Of Love Official Remastered HD Video.mp3"
+            />
+          </audio>
+          <audio src="">
+            <source >
+          </audio>
+        </section>
+      </article>
+
+      <article id="video" class="vid">
+        <section>
+          <h1><em> Video element</em></h1>
+          <video controls
+           src="assets/video/GOT.mp4" />
+          </video>
+        </section>
+      </article>
+
+      <div class="flex">
+        <article id="iframe">
+          <section>
+            <h1><em>Iframe element</em></h1>
+            <iframe
+              src="https://www.youtube.com/embed/fNfESZ3nK58?si=OayxyKIyZkHLewMk"
+              title="Altschool Africa Assignments and Assessments: Where to get help"
+            ></iframe>
+          </section>
+        </article>
+        <article id="embed">
+          <section>
+            <h1><em>Embed element</em></h1>
+            <embed
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20210723103530/simplescreesdfdsrecorder2021071.gif"
+            width="300px" height="300px">
+          </section>
+        </article>
+      </div>
+      <article id="source">
+       <section>
+        <h1><em>Source</em></h1>
+        <video controls>
+          <source src="assets/video/luck.mp4">
+        </video>
+       </section>
+      </article>
+      <article id="track">
+
+        <section>
+         <h1><em>Track element</em></h1>
+         <video controls>
+           <source src="assets/video/luck.mp4">
+           <track src="assets/subtitle/luck-2022-awafim.tv.vtt" default kind="captions" srclang="en" label="English">
+         </video>
+
+        </section>
+       </article>
+       <article id="picture">
+        <section>
+          <h1><em>The picture element</em></h1>
+          <picture>
+            <source media="(min-width: 650px)" srcset="assets/images/jolly2.jpg">
+            <source media="(min-width: 465px)" srcset="assets/images/fried2.jpg">
+            <img src="assets/images/file.jpg">
+          </picture>
+        </section>
+       </article>
+    </main>
+  </body>
+</html>
